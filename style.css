@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    border-bottom: 1px solid black;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #FFC017;
+    width: 100%;
+    height: 10vh;
+    transition: background-color 0.3s;
+    transition-timing-function: ease-in;
+}
+.change_header {
+    background-color: white;
+    transition: background-color 0.3s;
+    transition-timing-function: ease-in;
+}
+.change_header #btn_container > button {
+    background-color: green;
+}
+.logo {
+    width: 40%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.logo img {
+    width: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    cursor: pointer;
+}
+.navbar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 5px;
+}
+nav > ul {
+    display: flex;
+}
+nav > ul > li {
+    padding: 0 15px;
+    list-style: none;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+#story {
+    padding-left: 20px;
+}
+#btn_container {
+    width: 20%;
+    /* border: 1px solid blue; */
+    position: relative;
+}
+#login {
+    border: none;
+    background: none black;
+    color: white;
+    padding: 12px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.3;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFC017;
+    width: 100%;
+    height: 67vh;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+
+}
+#heading {
+    /* border: 1px solid red; */
+    position: relative;
+}
+#all_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 110px;
+    padding-bottom: 20px;
+}
+#all_content h3 {
+    font-size: 100;
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 100;
+    width: 570px;
+    margin: 20 0;
+    letter-spacing: -3.3px;
+}
+#all_content p {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    width: 450px;
+    letter-spacing: -0.2;
+    margin-bottom: 50;
+}
+#start {
+    border: none;
+    background: none ;
+    background-color: #000000e0;
+    color: white;
+    padding: 11px 50px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 20;
+}
+#start:hover {
+    background-color: black;
+}
+#image {
+    display: flex;
+        flex-wrap: wrap;
+        margin: 5px 0px;
+        
+}
+#image span {
+    margin: 0px 10px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+#trending {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+#trending_title {
+    position: relative;
+}
+#trending_title img {
+    width: 45px;
+}
+#trending_title h5 {
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.3px;
+}
+#trending_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box {
+    width: 33%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: 20px;
+}
+.num p {
+    font-size: 30px;
+    font-weight: 900;
+    color: lightgray;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    opacity: 0.5;
+}
+.box_cont {
+    cursor: pointer;
+}
+.user_title {
+    display: flex;
+    padding-top: 10;
+}
+.user {
+    width: 20px;
+    
+}
+.box_cont > div > a {
+    text-decoration: none;
+    color: black;
+}
+.box_cont > div > a > div > p {
+    padding-left: 7px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-top:2px;
+    
+}
+.box_cont > div > a > h4 {
+    padding: 7px 0px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
+#date {
+    padding: 7px 0px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+#news {
+    width: 100%;
+    height: 200vh;
+    border-top: 1px solid lightgray;
+    
+}
+#news_cont {
+    width: 80%;
+    height: 200vh;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 60px;
+
+}
+#articles {
+    width: 70%;
+    height: 200vh;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.article_container {
+    width: 100%;
+    height: 200;
+    margin: 20 0;
+    /* background-color: red; */
+    cursor: pointer;
+    display: flex;
+}
+.cont {
+    width: 70%;
+    /* border: 1px solid black; */
+}
+.article_img {
+    width: 30%;
+}
+.article_img img {
+    width: 200px;
+    padding-left: 10;
+}
+.title {
+    display: flex;
+}
+.title > p {
+    padding-left: 7px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-top: 2px;
+}
+.cont > h3 {
+    padding: 7px 0px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 22;
+}
+.cont > p {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: gray;
+}
+aside {
+    width: 30%;
+    height: 200vh;
+   
+}
+#aside {
+    position: sticky;
+    top: 11vh;
+    height: 15vh;
+}
+aside h5 {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10 0;
+}
+#boxes {
+    display: flex;
+    width: 85%;
+    height: 150%;
+    
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    border-bottom: 1px solid lightgray;
+
+
+}
+.containers {
+    border: 1px solid lightgray;
+    padding: 5px;
+    margin: 3px;
+    height: 20%;
+    cursor: pointer;
+    /* position: relative; */
+}
+.containers p {
+    padding: 0 5;
+    color: gray;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+#foot {
+    margin-top: 20;
+}
+#foot span {
+    color: rgb(98, 98, 98);
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 5;
+    font-size: 14px;
+    cursor: pointer;
+}
